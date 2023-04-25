@@ -104,11 +104,11 @@ def get_notice():
     day = localtime().tm_mday
     today = datetime.date(datetime(year=year, month=month, day=day))
     if today.isoweekday().__eq__(3) or today.isoweekday().__eq__(4) or today.isoweekday().__eq__(5):
-        return "今天是clinic天喔，要加油完成喔~(ง•̀_•́)ง"
+        return "今天是工作天喔，要加油喔~(ง•̀_•́)ง"
     elif today.isoweekday().__eq__(6) or today.isoweekday().__eq__(7):
         return "今天是周末，好好睡觉，快乐看视频(◕ᴗ◕)"
     else:
-        return "今天不用clinic，但是也要乖乖地多喝水~多摸鱼(*^▽^*)"
+        return "今天是工作天喔，要加油喔~(ง•̀_•́)ง)"
 
 def get_ciba():
     url = "http://open.iciba.com/dsapi/"
